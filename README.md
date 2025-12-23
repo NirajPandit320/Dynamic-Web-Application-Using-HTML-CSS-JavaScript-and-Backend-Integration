@@ -1,0 +1,2 @@
+# Dynamic-Web-Application-Using-HTML-CSS-JavaScript-and-Backend-Integration
+This web application includes multiple web pages with well-designed layouts, interactive elements, and form handling to simulate real-world web functionality. Emphasis was placed on frontend development principles such as responsive design, semantic HTML structure, reusable CSS styling, and dynamic client-side behavior using JavaScript
