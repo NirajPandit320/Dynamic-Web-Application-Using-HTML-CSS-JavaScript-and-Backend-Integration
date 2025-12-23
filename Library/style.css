@@ -1,0 +1,170 @@
+body{
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: rgb(235, 207, 171);
+    color: rgb(48, 38, 28);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+
+}
+li a{
+    text-decoration: none;
+    color: rgb(48, 38, 28);
+    padding: 10PX;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+li a:hover{
+    background-color: #322513;
+    color: rgb(235, 207, 171);
+    transition: 0.4s;
+}
+
+.top-container{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    /* background: url(img/repeating-triangles.svg); */
+    /* background-color: antiquewhite; */
+}
+.top-left{
+    width: 45vw;
+    padding: 8px;
+    /* background-color: aquamarine; */
+}
+.top-left-p{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 5vw;
+    margin: 0;
+}
+.top-right{
+    /* background-color: aqua; */
+    padding: 8px;
+    width: 35vw;
+    display: flex;
+}
+.top-right-img{
+    width: 100%;
+    height: 55vh;
+    border-radius: 24px;
+    box-shadow: 2px 2px 10px black;
+}
+
+
+#book-con-title-h1,#book-con-title-h1-f{
+    font-size: 4.5vw;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    padding: 8px;
+    border:1px solid black;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.book-image {
+    width: 100%;
+    height: auto;
+}
+
+.book-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.book-author {
+    color: #555;
+    margin: 5px 0;
+}
+
+.book-description {
+    font-size: 0.9em;
+    color: #777;
+    padding: 0 10px 10px;
+}
+
+
+
+
+.con-container{
+
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(239, 229, 215, 0.541);
+}
+.con-left{
+    width: 50%;
+}
+
+#con-img{
+    width: 100%;
+    height: 80vh;
+}
+.con-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    display: block;
+    margin: 5vh;
+    width: 40vw;
+    height: 6vh;
+    border: 1px solid;
+    border-color: rgba(199, 199, 199, 0.89);
+    border-radius: 6px;
+    
+
+}
+button{
+
+    width: 16vw;
+    margin-left: 15vw ;
+    height: 45px;
+    background-color: rgb(66, 41, 9);
+    color: #fff;
+}
+.p-con{
+    font-size: 7vw;
+    text-align: center;
+    background-color: rgba(239, 229, 215, 0.541);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.382);
+    margin: 0px;
+    border-radius: 12px 12px 0px 0px;
+    margin-top: 40px;
+}
+.navigate-button{
+    width: 13vw;
+}
+
+.con-left img{
+    width: 40vw;
+}
+
+

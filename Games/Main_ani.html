@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LET'S PLAY</title>
+    <style>
+        body {
+            background-image: radial-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+            background-size: 120% 150%;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        nav {
+    background-color: #2f00ff;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #fc3131;
+}
+
+
+            .op{
+                margin: 20px; 
+                background-color: black;
+                color: black;
+                font-size: x-large;
+                margin: 10px 10px 10px 10px;
+                height: 30vh;
+                width: 95vw;
+                border: solid 2px aqua;
+                border-radius: 30px 30px 30px 30px ;
+                text-align: center;
+                align-items: center;
+                align-content: center;
+                text-shadow: -1px 1px 0 #02ffff, 1px 1px 0 #208c8c, 1px -1px 0 #208c8c, -1px -1px 0 #02ffff;
+                }
+        .foo {
+            font-size: 2em;
+            margin: 20px;
+            text-align: center;
+        }
+        #game {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 1200px; /* Maximum width for larger screens */
+        }
+        .heading {
+            margin: 20px;
+            padding: 20px;
+            height: 30vh; /* Adjusted for better responsiveness */
+            width: 20vw; /* Adjusted for better responsiveness */
+            border: solid 1.5px aqua;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: last baseline;
+        }
+        #one{
+            background-image: url('image/ttt.png'); /* Ensure the path is correct */
+            background-size: cover;
+        }
+        #two{
+            background-image: url('image/animation2.png'); /* Ensure the path is correct */
+            background-size: cover;
+        }
+        button {
+            background-color: #36a1a1;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: large;
+            text-shadow: -1px 1px 0 #02ffff, 1px 1px 0 #208c8c;
+            transition: background-color 0.3s;
+        }
+        a{
+           text-decoration: none;
+           font-size: x-large;
+           font-weight: 900;
+           color: black;
+           text-shadow: -1px 1px 0 #02ffff, 1px 1px 0 #28a3a3, 1px -1px 0 #36c5c5, -1px -1px 0 #02ffff;
+        }
+        button:hover {
+            background-color: #16ffff;
+           
+        }
+        video{
+            height: 500px;
+            width: 1000px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1000px) {
+            .heading {
+                height: 45vh; /* Increase height on smaller screens */
+                width: 40vw; /* Increase width on smaller screens */
+            }
+            .op {
+                font-size: 1.5em; /* Adjust font size for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .heading {
+                height: 50vh; /* Further increase height for very small screens */
+                width: 90vw; /* Use almost full width */
+            }
+            .op {
+                font-size: 1.2em; /* Further adjust font size */
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="foo">
+        <h1>Animation Side</h1>
+    </div>
+    <div id="game">
+        <div class="me">
+            <div class="heading" id="one">
+                <button><a href="Ani_1.html">START</a></button>
+            </div>
+        </div>
+
+        <div class="me">
+            <div class="heading" id="two">
+                <button><a href="Ani_2.html">START</a></button>
+            </div>       
+        </div>
+</div>
+
+    <div class="op">
+    <h2>The process of animation was a process of giving life, of literally taking the inanimate and making it animate.</h2>
+</div>
+</body> 
+</html>  

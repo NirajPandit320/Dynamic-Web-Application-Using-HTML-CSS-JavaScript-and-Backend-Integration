@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Kanit&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev</title>
+    <style>
+        *{
+    margin: 0;
+}
+body{
+    font-family: "Oxanium", sans-serif;
+    font-size: 1.5vw;
+    color: #333;
+    height: 100%;
+}
+li{
+    display: inline;
+    float: right;
+    margin-left: 7vw;
+    margin-right: 2.5vw;
+    margin-top: 3vh;
+    font-weight: 700;
+}
+li a{
+    text-decoration: none;
+    color:#333;
+}
+a:hover{
+    color: white;
+}
+li:hover{
+    transition: 0.6s;
+    color: white;
+    background-color: #333;
+    padding: 8px 4px;
+}
+
+.navbar{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/Contact\ Us.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+
+    
+}
+.gap{
+    height: 30vh;
+}
+
+.top{
+    display: flex;
+    justify-content: end;
+    height: 94vh;
+    width: 100vw;
+}
+.left{
+    width: 40vw;
+}
+.right{
+    width: 60vw;
+}
+
+
+.form-container {
+    width: 500px;
+    background: rgba(14, 14, 15, 0.353);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.332);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    padding: 40px 40px;
+    font-size: 18px;
+    margin-left: 12vw;
+    color: #333;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+    display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+input {
+  width: 93%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+textarea {
+  width: 93%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+
+.btn {
+
+  font-family: inherit;
+  color: #c8c8c8;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  margin-top: 8px;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+  border-color: #fff;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <ul type="none">
+                <li class="center"><a href="ourTeam.html">Our Team</a></li>
+                <li class="center"><u>Contact Us</u></li>
+                <li class="center"><a href="project.html">Projects</a></li>
+                <li class="center"><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+        <div class="gap"></div>
+        <div class="top">
+            <div class="left">
+                
+            </div>
+            <div class="right">
+                <div class="form-container">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="email">Company Email</label>
+                            <input type="text" name="email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea">How Can We Help You?</label>
+                            <textarea name="textarea" rows="10" cols="50" required="">          </textarea>
+                        </div>
+                        <button class="btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

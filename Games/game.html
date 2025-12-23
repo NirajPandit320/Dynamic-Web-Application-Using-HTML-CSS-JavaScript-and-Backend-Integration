@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tic Tac Toe Game</title>
+    <style>
+        * {
+            inset: 0;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            margin: 20px;
+            font-family:monospace;
+            font-weight:bolder;
+            font-size: xx-large;
+        }
+        .container {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .game {
+            color: red;
+            height: 60vmin;
+            width: 60vmin;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2vmin;
+        }
+        .box {
+            height: 18vmin;
+            width: 18vmin;
+            border-radius: 20%;
+            border: none;
+            box-shadow: 0 0 1rem rgba(0, 255, 255, 1);
+            font-size: 8vmax;
+            color: rgb(1, 0, 12);
+            text-shadow: -2px 2px 0 #e73f3f, 2px 2px 0 #f15959, 2px -2px 0 #f36b6b, -2px -2px 0 #ff0202;
+            cursor: pointer;
+        }
+        #reset_button {
+            padding: 1rem;
+            font-size: 1.25rem;
+            background-color: black;
+            color: rgb(255, 255, 255);
+            border-radius: 15%;
+            border-color: aqua;
+            box-shadow: 0 0 1rem rgba(0, 255, 255, 1);
+            margin-top: 20px;
+        }
+        .op{
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px; 
+            background-color: black;
+            color: black;
+            font-size: x-large;
+            margin: 10px 10px 10px 10px;
+            height: 10vh;
+            width: 95vw;
+            border: solid 2px aqua;
+            border-radius: 30px 30px 30px 30px ;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            text-shadow: -1px 1px 0 #02ffff, 1px 1px 0 #208c8c, 1px -1px 0 #208c8c, -1px -1px 0 #02ffff;
+        }
+        header{
+            margin-top:20vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="op">
+        <h3>Welcome to CodeQuest: Where Gaming Meets Coding!</h3> 
+      </div>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset_button">Reset Game</button>
+    </main>
+    <footer>
+
+    </footer>
+    <p>Thank you for visiting Game</p>
+    <script>
+        let boxes = document.querySelectorAll(".box");
+        let resetButton = document.getElementById("reset_button");
+
+        let turnO = true; // true for O's turn, false for X's turn
+        let board = Array(9).fill(null); // Board state
+        let gameActive = true; // To track if the game is ongoing
+
+        const winConditions = [
+            [0, 1, 2],
+            [0, 3, 6],
+            [0, 4, 8],
+            [1, 4, 7],
+            [2, 5, 8],
+            [2, 4, 6],
+            [3, 4, 5],
+            [6, 7, 8],
+        ];
+
+        boxes.forEach((box, index) => {
+            box.addEventListener("click", () => {
+                if (box.innerText === "" && gameActive) {
+                    box.innerText = turnO ? "O" : "X";
+                    board[index] = turnO ? "O" : "X"; // Update board state
+                    checkWin();
+                    turnO = !turnO; // Switch turn
+                }
+            });
+        });
+
+        function checkWin() {
+            for (let condition of winConditions) {
+                const [a, b, c] = condition;
+                if (board[c] && board[a] === board[b] && board[a] === board[c]) {
+                    alert(`${board[a]} wins!`);
+                    gameActive = false; // Game over
+                    return;
+                }
+            }
+            if (!board.includes(null)) {
+                alert("It's a draw!");
+                gameActive = false; // Game over
+            }
+        }
+
+        resetButton.addEventListener("click", () => {
+            board.fill(null); // Reset board state
+            boxes.forEach(box => {
+                box.innerText = ""; // Clear each box
+            });
+            gameActive = true; // Reset game state
+            turnO = true; // Start with O's turn
+        });
+    </script>
+</body>
+</html>

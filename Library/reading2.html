@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Small Talk</title>
+    <style>
+        body{
+            font-family: "IBM Plex Serif", serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: rgb(235, 207, 171);
+    color: rgb(67, 51, 36);
+    display: flex;
+    justify-content: center;
+        }
+        
+        #top{
+            align-items: center;
+            font-size: 50px;
+            font-weight: 900;
+            background-color: rgba(246, 203, 147, 0.953);
+            border: 2px dashed black;
+        }
+        .main-container{
+            width: 60%;
+            text-align: center;
+        }
+        p{
+            text-justify:inter-word;
+            font-size: 30px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        img{
+            height: 50vh;
+        }
+        button{
+            width: 40vw;
+            height: 6vh;
+            font-size: 30px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+            border: 0px;
+            background-color: rgb(67, 51, 36);
+            color: rgb(235, 207, 171);
+            font-weight: 900;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.362);
+        }
+        button:hover{
+            background-color: rgb(235, 207, 171);
+            border: 3px solid rgb(9, 9, 9);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="main-container">
+        <div id="top">
+            Better Small Talk
+        </div><br><br>
+        <img src="img/better small.jpg" alt="">
+        <h1>Chapter 1.</h1>
+        <h2>Ugh, Small Talk</h2>
+        <p>
+            
+            Human beings are a social species. Connection is crucial to happiness,
+            staving off depression, and keeping healthy—literally. Various studies have
+            shown that the effects of loneliness are akin to eating a poorer diet and
+            exercising less, and can ultimately lead to the same place—an early death. <br><br>
+            It might sound a little melodramatic, but companionship is literally the way
+            our brains have been built to survive and thrive. <br><br>
+            But for the purposes of this book’s topic, there’s an even more important
+            wrinkle: the quality of our interactions matters as well, not just the quantity
+            or presence of other people around us. Sounds like even our brains despise
+            small talk. <br><br>
+            A 2010 study by Matthias Mehl had participants wandering around in their
+            daily lives armed with a device that would record their audio environment
+            over three days. The researchers analyzed how long each participant was in
+            the presence of other people, and whether they were having casual
+            conversations or were talking about more substantive matters. Basically, the
+            aim was to capture what kinds of interactions these participants were taking
+            part in, and the effect they had on their lives. <br><br>
+            At the same time, the researchers also measured people’s overall level of
+            happiness and mental and physical well-being. They found a clear
+            correlation between substantive and deep discussions and greater well￾being and happiness. It’s something you’ve probably suspected or even felt
+            before, but being vulnerable and open with others is a deeply satisfying
+            activity on many levels. <br><br>
+            As for small talk, that which is the opposite of substance and depth? Well, it
+            drew a negative correlation with well-being and happiness, meaning it made
+            people less happy. There you have it; real evidence that small talk is
+            something to be avoided, or at least transition out of as quickly as possible.
+            Researcher Arthur Aron conducted a study in 1997, in which he paired
+            participants who didn’t know each other and gave them a list of fairly
+            personal questions to ask. Although the questions were not offensively
+            intrusive, they were more than just small talk. (“Would you like to be
+            famous and how?” “Do you have a secret hunch about how you will die?”
+            “What is your most terrible memory?” “How do you feel about your
+            relationship with your mother?”) <br><br>
+            Aron found that the participants responded to these “deep dives” with
+            openness and intimacy. The participants didn’t feel that the questions, as
+            personal as they were, necessarily invaded their privacy or weakened them
+            in any way. Instead, these questions encouraged honesty, more emotional
+            fluency, and sincerity in the respondents. They felt closer to the other
+            participants, who were complete strangers before the experiment. Future
+            iterations of this study were given names such as “How to fall in love with
+            36 questions” because of the powerful effects it had on the relationships
+            between the participants, which were previously nonexistent. <br><br>
+            You probably already know deep in your bones what these two studies laid
+            out: delving more deeply or intensely in our communications can create
+            positive results far more swiftly than one might think. Now the question
+            remains: how can we actually do that? In this book, I want to provide a
+            framework, from beginning to end, about how to engage people more
+            effectively and move beyond small talk. We’ll start even before the
+            interaction begins with how you should prepare yourself, and move on
+            through all the stages of small talk to arrive at something more meaningful. <br><br>
+            At the prospect of reading this book, you might be overly excited about
+            throwing yourself into the midst of a conversation and seeing what you can
+            accomplish. After all, you’re reading this book for a reason, and motivation
+            can make you overeager—but rushing in would be a mistake for the time
+            being. It would be akin to running into battle without your shield, sword, or
+            even pants.
+        </p><br><br><br><br>
+
+
+        <div class="download">
+            <a href="books/Better_Small_Talk_Talk_to_Anyone,_Avoid_Awkwardness.pdf"><button id="downloadBtn" onclick="click()">Download</button></a>
+        </div>
+        <script>
+            var down = document.querySelector('#downloadBtn');
+            var originalContent = down.innerHTML; // Store the original content
+        
+            down.addEventListener('mouseover', function() {
+                down.innerHTML = '<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M6 16h-5v6h22v-6h-5v-1h6v8h-24v-8h6v1zm14 2c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm-7.5-17v14.884l4.736-5.724.764.645-5.979 7.195-6.021-7.205.765-.644 4.735 5.732v-14.883h1z"/></svg>';
+            });
+        
+            down.addEventListener('mouseout', function() {
+                down.innerHTML = originalContent; // Reset to the original content
+            });
+
+        </script>
+    </div>
+    
+</body>
+</html>

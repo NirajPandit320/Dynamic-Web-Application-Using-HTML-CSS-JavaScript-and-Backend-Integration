@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: "Oxanium", sans-serif;
+    font-size: 1.5vw;
+    color: #333;
+    height: 100%;
+}
+li{
+    display: inline;
+    float: right;
+    margin-left: 7vw;
+    margin-right: 2.5vw;
+    margin-top: 3vh;
+    font-weight: 700;
+}
+li a{
+    text-decoration: none;
+    color:#333;
+}
+a:hover{
+    color: white;
+}
+li:hover{
+    transition: 0.6s;
+    color: white;
+    background-color: #333;
+    padding: 8px 4px;
+}
+
+.navbar{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/Final_p.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+
+    
+}
+.photos {
+    width: 72.3%;
+    margin-left: 26.75vw;
+    height: 580px;
+    display: flex;
+    overflow: scroll;
+    padding: 10px;
+    
+}
+
+div.photos::-webkit-scrollbar { 
+    display: none; 
+}
+
+.pho {
+    width: 300px;
+    height: 300px;
+    padding: 80px;
+    transition: 0.3s;
+    }
+
+.pho:hover{
+        transition: 0.5s;
+        transform: scale(1.5);
+    }
+    
+.card{
+    border-radius: 24px;
+}
+.p1{
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.project{
+    height: 200px;
+}
+

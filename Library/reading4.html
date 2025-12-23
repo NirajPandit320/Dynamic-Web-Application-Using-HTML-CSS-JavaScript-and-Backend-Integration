@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why we Should Sleep Smarter</title>
+    <style>
+        body{
+            font-family: "IBM Plex Serif", serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: rgb(235, 207, 171);
+    color: rgb(67, 51, 36);
+    display: flex;
+    justify-content: center;
+        }
+        
+        #top{
+            align-items: center;
+            font-size: 50px;
+            font-weight: 900;
+            background-color: rgba(246, 203, 147, 0.953);
+            border: 2px dashed black;
+        }
+        .main-container{
+            width: 60%;
+            text-align: center;
+        }
+        p{
+            text-justify:inter-word;
+            font-size: 30px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        img{
+            height: 50vh;
+        }
+        button{
+            width: 40vw;
+            height: 6vh;
+            font-size: 30px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+            border: 0px;
+            background-color: rgb(67, 51, 36);
+            color: rgb(235, 207, 171);
+            font-weight: 900;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.362);
+        }
+        button:hover{
+            background-color: rgb(235, 207, 171);
+            border: 3px solid rgb(9, 9, 9);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="main-container">
+        <div id="top">
+            Why we Should Sleep Smarter 
+        </div>
+        <img src="img/why_whyf.png" alt="">
+        <h1>Myth No. 1:</h1>
+        <h2>Your Brain Rests While You Sleep</h2>
+        <p>
+            
+
+While it seems logical for the brain and body to rest during sleep
+couldn’t be further from the truth. In reality, the brain is in an oscil
+state during sleep. Instead of hitting the “power off” button and every
+shutting down, imagine the brain entering a hibernation state. Whil
+bodies get to rest and recuperate at night, our brain runs backgr
+processes and goes into housekeeping mode. Its job now is to kee
+body’s systems in good shape and make sure everything is run
+smoothly.
+Now, this happens because the sleep phase occurs in five diff
+stages. The first four stages are collectively called “slow-wave sl
+This is when our bodies enter the deepest, most serene state. The
+stage is known as rapid eye movement (REM) sleep or “dream sle
+This is the most active sleep stage, and although most of our bo
+paralyzed by now, it is characterized by horizontal muscular twitch
+the eyes that occur while we’re dreaming (Patel et al., 2022). All this
+been monitored in science by using measurements that specif
+record electrical-brainwave activity in the brain, eyes, and mus
+Despite everything else being shut down, these areas of the brai
+show activity when we enter the sleep phase.
+Accordingly, when we go to bed and wind down for sleep, our 
+prepares for this restorative phase. It works in intervals of roughl
+minute cycles, working through the sleep stages described above.
+During the first 30 minutes of the onset of sleep, we enter stages
+and two. This is the introduction phase, where our bodies’ int
+systems are winding down. Here, things like heart rate get reduced
+muscle tone relaxes. It’s important to note that this is the lightest fo
+sleep in this phase.
+In the next half hour, we enter stages three and four. This is know
+the “deep sleep” phase, which is often associated with synchro
+slow-wave sleep activity. Here in non-REM deep sleep, the brain m
+regulates the physical side of things: energy conservation occurs i
+body, and the autonomic system maintains balance during this time, 
+as clearing up the toxic buildup of waste chemicals like free radicals
+oxidative stress.
+After 60 minutes or so have passed, we finally enter the REM 
+stage. This dream sleep allows us to regulate emotional processes
+reflect on what has happened throughout the day; hence, learning
+memory formation are primarily related to this stage (Siegel, 2005).
+So, throughout the 90-minute sleep cycle, we have drifted from s
+one to REM sleep. But it doesn’t stop there. As the first cycle comes
+close, our brains and bodies oscillate back down from the REM 
+stage to stage one of slow-wave sleep, and this repeats throughout 
+successive sleep cycle. On average, we experience four to six 
+cycles a night (Patel et al., 2022). In the first half of these cycles,
+mainly experience deep sleep. Then, as we experience the second
+of the cycles, we’ll drift more into experiencing longer durations of 
+sleep. Both periods of the night are critical since it’s only the comb
+experience of deep sleep and REM sleep that ensures a restor
+night’s rest.
+It’s also important to note that I’ve simplified things by saying that the
+four stages of non-REM sleep keep your body working and that the 
+sleep stage helps you process your emotions. In reality, both st
+maintain physical and mental function throughout our bodies.
+example, growth hormone and testosterone production are mainta
+during the REM sleep stage.
+There you have it! Our bodies may be resting in place, but our brain
+maintaining law and order. By revealing the inner machinations o
+sleep phase, I hope it highlights how important this one-third of our
+is for our longevity
+        </p><br><br><br><br>
+
+
+        <div class="download">
+            <a href="books/Why_We_Should_Sleep_Smarter_The_Scientific_Blueprint.pdf"><button id="downloadBtn" onclick="click()">Download</button></a>
+        </div>
+        <script>
+            var down = document.querySelector('#downloadBtn');
+            var originalContent = down.innerHTML; // Store the original content
+        
+            down.addEventListener('mouseover', function() {
+                down.innerHTML = '<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M6 16h-5v6h22v-6h-5v-1h6v8h-24v-8h6v1zm14 2c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm-7.5-17v14.884l4.736-5.724.764.645-5.979 7.195-6.021-7.205.765-.644 4.735 5.732v-14.883h1z"/></svg>';
+            });
+        
+            down.addEventListener('mouseout', function() {
+                down.innerHTML = originalContent; // Reset to the original content
+            });
+
+        </script>
+    </div>
+    
+</body>
+</html>

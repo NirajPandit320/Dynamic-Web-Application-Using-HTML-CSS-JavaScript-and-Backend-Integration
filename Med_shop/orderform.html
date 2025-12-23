@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Medical Store Online Order</title>
+    <style>
+    body 
+    {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+h2 {
+    color: #333;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select{
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+     }
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Aadhya Medical Store Online Order Form</h2>
+    <form>
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Order Details</legend>
+            <label for="medicines">Medicines:</label><br>
+            <textarea id="medicines" name="medicines" rows="4" cols="50" placeholder="List the medicines you want to order" required></textarea><br><br>
+
+            <label for="prescription">Upload Prescription:</label><br>
+            <input type="file" id="prescription" name="prescription" required><br><br>
+
+            <label for="delivery">Delivery Method:</label><br>
+            <select id="delivery" name="delivery" required>
+                <option value="standard">Standard Delivery</option>
+                <option value="express">Express Delivery</option>
+            </select><br><br>
+
+            <label for="payment">Payment Method:</label><br>
+            <select id="payment" name="payment" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="net-banking">Net Banking</option>
+                <option value="cash-on-delivery">Cash on Delivery</option>
+                <option value="cash-on-delivery">EMI</option>
+            </select><br><br>
+
+            <input type="submit" value="Place Order">
+            <input type="submit" value="Edit order">
+            <input type="submit" value="Cancel">
+            
+        </fieldset>
+    </form>
+</body>
+</html>

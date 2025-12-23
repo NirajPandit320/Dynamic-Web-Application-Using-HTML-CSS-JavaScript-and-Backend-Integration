@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Appoinment</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"], textarea 
+{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+    section 
+    {
+    background-color: rgb(252, 239, 239);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: #17cece;
+    }
+
+    #book-appointment 
+    { background-color: #f0f8ff; 
+    } 
+
+    #book-appointment h2 
+    { color: #1e90ff;
+    } 
+
+    #book-appointment form 
+    { 
+        border: 1px solid #1e90ff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(30, 144, 255, 0.2); 
+    } 
+
+    #book-appointment input[type="submit"]:hover 
+    {
+         background-color: #4169e1;
+    }
+    
+    </style>
+</head>
+<body>
+    <section  id="book-appointment">
+        <h2>Book an Appointment</h2>
+        
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="appointment-date">Preferred Date:</label><br>
+            <input type="date" id="appointment-date" name="appointment-date" required><br><br>
+
+            <label for="appointment-time">Preferred Time:</label><br>
+            <input type="time" id="appointment-time" name="appointment-time" required><br><br>
+
+            <input type="submit" value="Book Appointment">
+        </form>
+    </section>
+</body>
+</html>

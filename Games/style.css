@@ -1,0 +1,241 @@
+body {
+    background: linear-gradient(to bottom, rgb(211, 214, 255), #b4b9ff, rgb(150, 155, 255));  
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav {
+    height: 40px;
+    }
+
+    #about{
+        background-color: rgb(226, 227, 255);
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 4px;
+        color: rgb(92, 91, 91);
+    }
+    #about:hover{
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(180, 180, 180);
+        border-radius: 4px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.089);
+        color: black;
+        transition: 0.2s;
+    }
+    #contact{
+        background-color: rgb(68, 77, 255);
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 4px;
+        transition: 0.2s;
+    }
+    #contact:hover{
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(180, 180, 180);
+        border-radius: 4px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.089);
+        color: rgb(68, 77, 255);
+        transition: 0.4s;
+    }
+.menu {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: end;
+}
+#menu{
+background-color: rgb(211, 214, 255);
+position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px; 
+    
+}
+
+.menu li {
+margin: 0 15px;
+}
+
+.menu a {
+color: white;
+font-size: x-large;
+font-weight: bold;
+text-decoration: none;
+padding: 14px 20px;
+display: block;
+}
+
+.menu a:hover {
+background-color: #fc3131;
+}
+.body{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px;
+margin-left: 0;
+padding: 5px;
+margin-top: 60px;
+background-color:none;
+height: 100%;
+width: 99.4%;
+display: flex;
+
+}
+hr{
+height: 0.2px;
+width: 100%;
+border-color: black;
+background-color: black;
+}
+.main{
+background-color: none;
+height: 700px;
+width: 5%;
+}
+.container{
+height: 80vh;
+width: 90%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+align-content: center;
+}
+.card-container1{
+display: block;
+justify-content: center;
+align-items: center;
+background-color: rgb(203, 209, 255);
+height: 60%;
+width: 20%;
+
+}
+
+.card-container3{
+display: block;
+justify-content: center;
+align-items: center;
+background-color: rgb(203, 209, 255);
+height: 60%;
+width: 20%;
+
+}
+
+.main2{
+background-color: none;
+height: 700px;
+width: 5%; 
+}
+.part1{
+margin: 0.8vw 0px 0px 0.85vw;
+background-color: none;
+height: 45%;
+width: 90%;
+text-align: center;
+}
+.part2{
+margin: 0.8vw 0px 0px 0.85vw;
+background-color: none;
+height: 45%;
+width: 90%;
+text-align: center;
+font-size: large;
+font-weight: 200;
+}
+.photo{
+
+height: 120px;
+width: 120px;
+background-color: rgb(0, 136, 255);
+border-radius: 50%;
+}
+h1{
+margin: 0;
+}
+.part1_in{
+height: 65%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+a{
+text-decoration: none;
+color: black;
+}
+.contact-container {
+width: 50%;
+margin: 50px auto;
+padding: 20px;
+background-color: rgb(211, 214, 255);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+text-align: center;
+color: #070707;
+}
+
+form {
+display: flex;
+flex-direction: column;
+}
+
+label {
+margin-bottom: 5px;
+color: #555;
+}
+
+input, textarea {
+margin-bottom: 15px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+    .button {
+        background-color: rgb(68, 77, 255);
+        color: white;
+        font-weight: bolder;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 4px;
+        transition: 0.2s;
+    }
+
+    .button:hover {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(180, 180, 180);
+        border-radius: 4px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.089);
+        color: rgb(68, 77, 255);
+        transition: 0.4s;
+        font-weight: bolder;
+    }
+    .photo1{
+height: 50px;
+width: 50px;
+background-color: rgb(0, 136, 255);
+border-radius: 50%;
+margin: 20px;
+padding: 8px;
+}
+.conta{
+display: flex;
+}
+.contaphoto{
+display: flex;
+width: 50%;
+margin: 50px auto;
+padding: 20px;
+background-color: rgb(211, 214, 255);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+height: 350px;
+width: 500px;
+}
